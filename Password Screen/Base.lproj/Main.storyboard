@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="3633" y="439"/>
         </scene>
-        <!--Staff Info Table Table View Controller-->
+        <!--Staff List Table View Controller-->
         <scene sceneID="ss8-c9-M1h">
             <objects>
-                <tableViewController id="6nL-rJ-L5M" customClass="StaffInfoTableTableViewController" sceneMemberID="viewController">
+                <tableViewController id="6nL-rJ-L5M" customClass="StaffListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CiM-8c-KCT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

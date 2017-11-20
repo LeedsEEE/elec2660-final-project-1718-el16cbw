@@ -17,7 +17,7 @@
 		231B8F651FC3118400360A90 /* Password_ScreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F641FC3118400360A90 /* Password_ScreenUITests.m */; };
 		231B8F741FC3290000360A90 /* SelectFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F731FC3290000360A90 /* SelectFunctionViewController.m */; };
 		231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */; };
-		231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */; };
+		231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */; };
 		231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */; };
 		231B8F801FC3433200360A90 /* StaffInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7F1FC3433200360A90 /* StaffInformation.m */; };
 /* End PBXBuildFile section */
@@ -60,8 +60,8 @@
 		231B8F731FC3290000360A90 /* SelectFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectFunctionViewController.m; path = ../SelectFunctionViewController.m; sourceTree = "<group>"; };
 		231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoViewController.h; sourceTree = "<group>"; };
 		231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoViewController.m; sourceTree = "<group>"; };
-		231B8F781FC32EAA00360A90 /* StaffInfoTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoTableTableViewController.h; sourceTree = "<group>"; };
-		231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoTableTableViewController.m; sourceTree = "<group>"; };
+		231B8F781FC32EAA00360A90 /* StaffListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffListTableViewController.h; sourceTree = "<group>"; };
+		231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffListTableViewController.m; sourceTree = "<group>"; };
 		231B8F7B1FC33F2600360A90 /* StaffInfoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoDataModel.h; sourceTree = "<group>"; };
 		231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoDataModel.m; sourceTree = "<group>"; };
 		231B8F7E1FC3433200360A90 /* StaffInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInformation.h; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 				231B8F721FC3290000360A90 /* SelectFunctionViewController.h */,
 				231B8F731FC3290000360A90 /* SelectFunctionViewController.m */,
 				231B8F481FC3118400360A90 /* Main.storyboard */,
-				231B8F781FC32EAA00360A90 /* StaffInfoTableTableViewController.h */,
-				231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */,
+				231B8F781FC32EAA00360A90 /* StaffListTableViewController.h */,
+				231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */,
 				231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */,
 				231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */,
 				231B8F7E1FC3433200360A90 /* StaffInformation.h */,
@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231B8F471FC3118400360A90 /* ViewController.m in Sources */,
-				231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */,
+				231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */,
 				231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */,
 				231B8F441FC3118400360A90 /* AppDelegate.m in Sources */,
 				231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */,

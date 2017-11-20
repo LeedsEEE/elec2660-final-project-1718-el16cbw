@@ -6,13 +6,13 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "StaffInfoTableTableViewController.h"
+#import "StaffListTableViewController.h"
 
-@interface StaffInfoTableTableViewController ()
+@interface StaffListTableViewController ()
 
 @end
 
-@implementation StaffInfoTableTableViewController
+@implementation StaffListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

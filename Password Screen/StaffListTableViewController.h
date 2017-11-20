@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StaffInfoTableTableViewController : UITableViewController
+@interface StaffListTableViewController : UITableViewController
 
 - (IBAction)staffInfoTableBackButtonPressed:(id)sender;
 
