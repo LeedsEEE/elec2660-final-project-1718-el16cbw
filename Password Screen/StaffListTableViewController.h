@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StaffInformation.h"
 #import "StaffInfoDataModel.h"
-
+#import "StaffInfoViewController.h"
 
 @interface StaffListTableViewController : UITableViewController
 

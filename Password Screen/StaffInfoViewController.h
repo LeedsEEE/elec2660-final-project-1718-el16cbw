@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StaffInformation.h"
 
 @interface StaffInfoViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *staffImage;
+@property (weak, nonatomic) IBOutlet UILabel *dateStartedLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emergencyContactNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emergencyContactNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *languagesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *trainedOnLabel;
+
+@property (strong, nonatomic) StaffInformation *staffInformation;
 
 @end

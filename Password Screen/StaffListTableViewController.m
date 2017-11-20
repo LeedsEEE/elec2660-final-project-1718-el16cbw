@@ -44,7 +44,7 @@
     NSInteger numberOfRows;
     
     if(section == 0) {
-        numberOfRows = self.data.staffInformation.count;
+        numberOfRows = self.data.staffInformation.count; //number of rows matches number of staff in datamodel
     }
     return numberOfRows;
 }
@@ -54,6 +54,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StaffListCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    
+    if(indexPath.section == 0){
+        
+        StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text =tempStaffInformation.name;
+    }
     
     return cell;
 }
@@ -93,15 +100,30 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"ShowStaffDetails"]) {
+        
+        StaffInfoViewController *destinationStaffInfoViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        if(indexPath.section == 0) {
+            
+            StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
+            destinationStaffInfoViewController.staffInformation = tempStaffInformation;
+        }
+        
+    }
+
+
 }
-*/
 
     
 - (IBAction)staffInfoTableBackButtonPressed:(id)sender { //return to selectFunction view controller

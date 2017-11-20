@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.nameLabel.text = self.staffInformation.name;
+    self.dateStartedLabel.text = self.staffInformation.dateJoined;
+    self.emergencyContactNameLabel.text = self.staffInformation.emergencyContactName;
+    self.emergencyContactNumberLabel.text = self.staffInformation.emergencyContactNumber;
+    self.languagesLabel.text = self.staffInformation.languagesSpoken;
+    self.trainedOnLabel.text = self.staffInformation.trainedOn;
+    
 }
 
 - (void)didReceiveMemoryWarning {
