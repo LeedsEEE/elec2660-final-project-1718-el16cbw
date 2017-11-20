@@ -10,12 +10,15 @@
 
 @interface StaffListTableViewController ()
 
+
 @end
 
 @implementation StaffListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    self.data = [[StaffInfoDataModel alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -38,7 +41,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 5;
+    NSInteger numberOfRows;
+    
+    if(section == 0) {
+        numberOfRows = self.data.staffInformation.count;
+    }
+    return numberOfRows;
 }
 
 

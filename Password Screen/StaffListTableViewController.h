@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StaffInformation.h"
+#import "StaffInfoDataModel.h"
+
 
 @interface StaffListTableViewController : UITableViewController
 
 - (IBAction)staffInfoTableBackButtonPressed:(id)sender;
 
+@property (strong, nonatomic) StaffInfoDataModel *data; //Access stored staff info
 
 @end
