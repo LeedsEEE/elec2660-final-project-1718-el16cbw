@@ -18,6 +18,8 @@
 		231B8F741FC3290000360A90 /* SelectFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F731FC3290000360A90 /* SelectFunctionViewController.m */; };
 		231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */; };
 		231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */; };
+		231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */; };
+		231B8F801FC3433200360A90 /* StaffInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7F1FC3433200360A90 /* StaffInformation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoViewController.m; sourceTree = "<group>"; };
 		231B8F781FC32EAA00360A90 /* StaffInfoTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoTableTableViewController.h; sourceTree = "<group>"; };
 		231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoTableTableViewController.m; sourceTree = "<group>"; };
+		231B8F7B1FC33F2600360A90 /* StaffInfoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoDataModel.h; sourceTree = "<group>"; };
+		231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoDataModel.m; sourceTree = "<group>"; };
+		231B8F7E1FC3433200360A90 /* StaffInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInformation.h; sourceTree = "<group>"; };
+		231B8F7F1FC3433200360A90 /* StaffInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInformation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,10 @@
 				231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */,
 				231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */,
 				231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */,
+				231B8F7E1FC3433200360A90 /* StaffInformation.h */,
+				231B8F7F1FC3433200360A90 /* StaffInformation.m */,
+				231B8F7B1FC33F2600360A90 /* StaffInfoDataModel.h */,
+				231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */,
 				231B8F4B1FC3118400360A90 /* Assets.xcassets */,
 				231B8F4D1FC3118400360A90 /* LaunchScreen.storyboard */,
 				231B8F501FC3118400360A90 /* Info.plist */,
@@ -292,8 +302,10 @@
 				231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */,
 				231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */,
 				231B8F441FC3118400360A90 /* AppDelegate.m in Sources */,
+				231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */,
 				231B8F741FC3290000360A90 /* SelectFunctionViewController.m in Sources */,
 				231B8F411FC3118400360A90 /* main.m in Sources */,
+				231B8F801FC3433200360A90 /* StaffInformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
