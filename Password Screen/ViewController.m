@@ -26,4 +26,19 @@
 }
 
 
+- (IBAction)enterPasswordButtonPressed:(id)sender {
+    
+    NSString *passwordString = [NSString stringWithFormat:@"gw00d"]; //set password
+    
+    if([_enterPasswordField.text isEqualToString:passwordString]) { //password matches
+        NSLog(@"password is correct"); //App moves to select function view
+    }
+    else { //password doesn't match
+        NSLog(@"password is incorrect");
+        UIAlertController *incorrectPasswordAlert = [UIAlertController alertControllerWithTitle:@"Incorrect Password" message:@"Please Try Again" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [incorrectPasswordAlert addAction:okButton];
+        [self presentViewController:incorrectPasswordAlert animated:YES completion:nil];
+    }
+}
 @end

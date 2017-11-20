@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *greenwoodLogoImage;
+@property (weak, nonatomic) IBOutlet UILabel *enterPasswordLabel;
+@property (weak, nonatomic) IBOutlet UITextField *enterPasswordField;
+- (IBAction)enterPasswordButtonPressed:(id)sender;
 
 @end
 

@@ -15,6 +15,9 @@
 		231B8F4F1FC3118400360A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231B8F4D1FC3118400360A90 /* LaunchScreen.storyboard */; };
 		231B8F5A1FC3118400360A90 /* Password_ScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F591FC3118400360A90 /* Password_ScreenTests.m */; };
 		231B8F651FC3118400360A90 /* Password_ScreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F641FC3118400360A90 /* Password_ScreenUITests.m */; };
+		231B8F741FC3290000360A90 /* SelectFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F731FC3290000360A90 /* SelectFunctionViewController.m */; };
+		231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */; };
+		231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		231B8F601FC3118400360A90 /* Password ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password ScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		231B8F641FC3118400360A90 /* Password_ScreenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Password_ScreenUITests.m; sourceTree = "<group>"; };
 		231B8F661FC3118400360A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		231B8F721FC3290000360A90 /* SelectFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectFunctionViewController.h; path = ../SelectFunctionViewController.h; sourceTree = "<group>"; };
+		231B8F731FC3290000360A90 /* SelectFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectFunctionViewController.m; path = ../SelectFunctionViewController.m; sourceTree = "<group>"; };
+		231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoViewController.h; sourceTree = "<group>"; };
+		231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoViewController.m; sourceTree = "<group>"; };
+		231B8F781FC32EAA00360A90 /* StaffInfoTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInfoTableTableViewController.h; sourceTree = "<group>"; };
+		231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +114,13 @@
 				231B8F431FC3118400360A90 /* AppDelegate.m */,
 				231B8F451FC3118400360A90 /* ViewController.h */,
 				231B8F461FC3118400360A90 /* ViewController.m */,
+				231B8F721FC3290000360A90 /* SelectFunctionViewController.h */,
+				231B8F731FC3290000360A90 /* SelectFunctionViewController.m */,
 				231B8F481FC3118400360A90 /* Main.storyboard */,
+				231B8F781FC32EAA00360A90 /* StaffInfoTableTableViewController.h */,
+				231B8F791FC32EAA00360A90 /* StaffInfoTableTableViewController.m */,
+				231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */,
+				231B8F761FC32E1C00360A90 /* StaffInfoViewController.m */,
 				231B8F4B1FC3118400360A90 /* Assets.xcassets */,
 				231B8F4D1FC3118400360A90 /* LaunchScreen.storyboard */,
 				231B8F501FC3118400360A90 /* Info.plist */,
@@ -274,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				231B8F471FC3118400360A90 /* ViewController.m in Sources */,
+				231B8F7A1FC32EAA00360A90 /* StaffInfoTableTableViewController.m in Sources */,
+				231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */,
 				231B8F441FC3118400360A90 /* AppDelegate.m in Sources */,
+				231B8F741FC3290000360A90 /* SelectFunctionViewController.m in Sources */,
 				231B8F411FC3118400360A90 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
