@@ -6,6 +6,7 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 @interface StaffInformation : NSObject
@@ -17,5 +18,6 @@
 @property (nonatomic, strong) NSString *emergencyContactNumber; //Can't use integer as first zero in number causes program to treat it as octal constant
 @property (nonatomic, strong) NSString *languagesSpoken;
 @property (nonatomic, strong) NSString *trainedOn;
+@property UIImageView *staffPhoto;
 
 @end

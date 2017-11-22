@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "StaffInformation.h"
-
+#import "StaffInfoViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface StaffInfoDataModel : NSObject
 

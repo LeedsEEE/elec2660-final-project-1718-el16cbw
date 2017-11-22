@@ -10,6 +10,7 @@
 
 @interface StaffInfoViewController ()
 
+
 @end
 
 @implementation StaffInfoViewController
@@ -24,6 +25,7 @@
     self.emergencyContactNumberLabel.text = self.staffInformation.emergencyContactNumber;
     self.languagesLabel.text = self.staffInformation.languagesSpoken;
     self.trainedOnLabel.text = self.staffInformation.trainedOn;
+    self.staffPhoto.image = [UIImage imageNamed:@"Face1.jpg"];
     
 }
 

@@ -23,7 +23,8 @@
         name1.emergencyContactNumber = @"Emergency contact number: 07584126589";
         name1.languagesSpoken = @"Speaks: Enlgish, Welsh";
         name1.trainedOn = @"Trained on: Green Dragon, Solar Splash,\n Moon Karts, Jungle Boats, Slide, Pillow,\n Archery, Costume";
-
+        name1.staffPhoto.image =[UIImage imageNamed:@"Face1.jpg"];
+        
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name2 = [[StaffInformation alloc] init];
         name2.name = @"Declan Williams";

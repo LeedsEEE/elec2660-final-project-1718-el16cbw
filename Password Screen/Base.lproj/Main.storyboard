@@ -173,7 +173,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRY-Hp-TCd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRY-Hp-TCd">
                                 <frame key="frameInset" minX="67" minY="82" width="240" height="128"/>
                             </imageView>
                         </subviews>
@@ -196,12 +196,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="StaffImage" destination="NRY-Hp-TCd" id="D8o-bc-NO4"/>
                         <outlet property="dateStartedLabel" destination="v9g-1b-qyh" id="ufX-Aj-Pzd"/>
                         <outlet property="emergencyContactNameLabel" destination="x00-jZ-ORS" id="lmt-R3-Wbd"/>
                         <outlet property="emergencyContactNumberLabel" destination="r1t-jt-M3U" id="l5b-90-Yzp"/>
                         <outlet property="languagesLabel" destination="5lK-3m-pwP" id="SS9-Pp-fo3"/>
                         <outlet property="nameLabel" destination="08f-vi-ttb" id="Yqf-ux-4co"/>
+                        <outlet property="staffPhoto" destination="NRY-Hp-TCd" id="xya-dB-6YZ"/>
                         <outlet property="trainedOnLabel" destination="3xl-XU-kJ5" id="G5i-XS-wXD"/>
                     </connections>
                 </viewController>
