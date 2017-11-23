@@ -20,6 +20,7 @@
 		231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */; };
 		231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */; };
 		231B8F801FC3433200360A90 /* StaffInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7F1FC3433200360A90 /* StaffInformation.m */; };
+		2337260E1FC73B5C008D7912 /* BeginRotaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */; };
 		23C4FFAA1FC6CB5900D6566D /* Face2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFA91FC6CB5900D6566D /* Face2.jpg */; };
 		23C4FFAC1FC6CB6800D6566D /* Face3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFAB1FC6CB6800D6566D /* Face3.jpg */; };
 		23C4FFAE1FC6CB8B00D6566D /* Face4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFAD1FC6CB8B00D6566D /* Face4.jpg */; };
@@ -76,6 +77,8 @@
 		231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoDataModel.m; sourceTree = "<group>"; };
 		231B8F7E1FC3433200360A90 /* StaffInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInformation.h; sourceTree = "<group>"; };
 		231B8F7F1FC3433200360A90 /* StaffInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInformation.m; sourceTree = "<group>"; };
+		2337260C1FC73B5C008D7912 /* BeginRotaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginRotaTableViewController.h; sourceTree = "<group>"; };
+		2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginRotaTableViewController.m; sourceTree = "<group>"; };
 		23C4FFA91FC6CB5900D6566D /* Face2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face2.jpg; sourceTree = "<group>"; };
 		23C4FFAB1FC6CB6800D6566D /* Face3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face3.jpg; sourceTree = "<group>"; };
 		23C4FFAD1FC6CB8B00D6566D /* Face4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face4.jpg; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				231B8F721FC3290000360A90 /* SelectFunctionViewController.h */,
 				231B8F731FC3290000360A90 /* SelectFunctionViewController.m */,
 				231B8F481FC3118400360A90 /* Main.storyboard */,
+				2337260C1FC73B5C008D7912 /* BeginRotaTableViewController.h */,
+				2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */,
 				231B8F781FC32EAA00360A90 /* StaffListTableViewController.h */,
 				231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */,
 				231B8F751FC32E1C00360A90 /* StaffInfoViewController.h */,
@@ -340,6 +345,7 @@
 			files = (
 				231B8F471FC3118400360A90 /* ViewController.m in Sources */,
 				231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */,
+				2337260E1FC73B5C008D7912 /* BeginRotaTableViewController.m in Sources */,
 				231B8F771FC32E1C00360A90 /* StaffInfoViewController.m in Sources */,
 				231B8F441FC3118400360A90 /* AppDelegate.m in Sources */,
 				231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */,

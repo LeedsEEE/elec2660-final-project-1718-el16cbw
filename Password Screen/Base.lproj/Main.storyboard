@@ -89,6 +89,9 @@
                                 <state key="normal" title="Begin Rota">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iKJ-km-UO6" kind="show" id="FDt-ye-DhZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-rM-yUc">
                                 <color key="backgroundColor" red="1" green="0.88352052688093385" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -229,6 +232,74 @@
             </objects>
             <point key="canvasLocation" x="3632.8000000000002" y="438.53073463268368"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="efW-5G-P82">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTJ-uO-uXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="iKJ-km-UO6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gj9-Wg-x0I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6xW-Qr-Joe" kind="relationship" relationship="rootViewController" id="lvr-s0-Ruw"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2038" y="-321"/>
+        </scene>
+        <!--Begin Rota Table View Controller-->
+        <scene sceneID="Dt9-Iv-t5i">
+            <objects>
+                <tableViewController id="6xW-Qr-Joe" customClass="BeginRotaTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4vV-Dr-Lpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="staffNameCell" id="cnb-Z6-OWA">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cnb-Z6-OWA" id="2PA-j8-lpo">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8Z-u6-uCl">
+                                            <frame key="frameInset" minX="318" minY="6" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6xW-Qr-Joe" id="F8Z-B9-VjF"/>
+                            <outlet property="delegate" destination="6xW-Qr-Joe" id="uTf-VL-aBl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n1I-yJ-BkG">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="VGn-hZ-tYf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0e2-Wy-WMD">
+                                <rect key="frame" x="16" y="4" width="83" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.13098140331674346" blue="0.058241044511690099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bvy-HO-gOf" kind="show" id="nnJ-WY-Eih"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="beginRotaBackButton:" destination="6xW-Qr-Joe" id="3CB-D6-jMI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWm-Iv-LCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="-320"/>
+        </scene>
         <!--Staff List Table View Controller-->
         <scene sceneID="ss8-c9-M1h">
             <objects>
@@ -239,7 +310,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffListCell" textLabel="Mdv-57-l2b" style="IBUITableViewCellStyleDefault" id="2vh-ZT-pwb">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2vh-ZT-pwb" id="Mwe-SV-x8f">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -293,6 +364,6 @@
         <image name="Logo" width="212" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H5w-cu-Xdr"/>
+        <segue reference="nnJ-WY-Eih"/>
     </inferredMetricsTieBreakers>
 </document>
