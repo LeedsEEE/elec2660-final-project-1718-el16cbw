@@ -18,6 +18,6 @@
 @property (nonatomic, strong) NSString *emergencyContactNumber; //Can't use integer as first zero in number causes program to treat it as octal constant
 @property (nonatomic, strong) NSString *languagesSpoken;
 @property (nonatomic, strong) NSString *trainedOn;
-@property UIImageView *staffPhoto;
+@property UIImage *staffPhoto;
 
 @end

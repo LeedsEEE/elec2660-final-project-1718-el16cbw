@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *emergencyContactNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *languagesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *trainedOnLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *staffPhoto;
+@property (weak, nonatomic) IBOutlet UIImageView *staffPhotoImageView;
+
 
 @property (strong, nonatomic) StaffInformation *staffInformation;
 
