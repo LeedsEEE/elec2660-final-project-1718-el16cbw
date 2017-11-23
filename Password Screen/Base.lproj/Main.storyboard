@@ -79,19 +79,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-h1-pRt">
-                                <frame key="frameInset" minX="90" minY="166" width="195" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-h1-pRt">
                                 <color key="backgroundColor" red="1" green="0.033519168025254564" blue="0.081606025719402453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="u17-sc-82O"/>
+                                    <constraint firstAttribute="width" constant="256" id="v0i-YD-yNv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Begin Rota">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-rM-yUc">
-                                <frame key="frameInset" minX="90" minY="352" width="195" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-rM-yUc">
                                 <color key="backgroundColor" red="1" green="0.88352052688093385" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="Apw-rU-gGf"/>
+                                    <constraint firstAttribute="height" constant="110" id="XVY-FS-i7S"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Staff List">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,12 +106,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qmg-rM-yUc" firstAttribute="top" secondItem="gUK-h1-pRt" secondAttribute="bottom" constant="99" id="ZrP-Zo-XCO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qmg-rM-yUc" secondAttribute="trailing" constant="44" id="bMt-7O-rdh"/>
+                            <constraint firstItem="gUK-h1-pRt" firstAttribute="top" secondItem="BUz-80-rPb" secondAttribute="bottom" constant="142" id="dr4-au-xYF"/>
+                            <constraint firstItem="qmg-rM-yUc" firstAttribute="leading" secondItem="tx8-Gs-y38" secondAttribute="leadingMargin" constant="43" id="ePa-fS-YRR"/>
+                            <constraint firstItem="gUK-h1-pRt" firstAttribute="leading" secondItem="tx8-Gs-y38" secondAttribute="leadingMargin" constant="43" id="kMw-yL-aon"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gUK-h1-pRt" secondAttribute="trailing" constant="44" id="tWL-R5-Bp1"/>
+                            <constraint firstItem="qmg-rM-yUc" firstAttribute="centerX" secondItem="tx8-Gs-y38" secondAttribute="centerX" id="wJZ-ko-6fp"/>
+                            <constraint firstItem="gUK-h1-pRt" firstAttribute="centerX" secondItem="tx8-Gs-y38" secondAttribute="centerX" id="yRn-63-8WL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Dj-w4-RNr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtO-Tu-Akd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="28"/>
+            <point key="canvasLocation" x="1152.8" y="27.436281859070466"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KmD-nb-7KF">
