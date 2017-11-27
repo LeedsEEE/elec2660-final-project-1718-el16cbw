@@ -1,29 +1,23 @@
 //
-//  BeginRotaTableViewController.m
+//  CreateRotaTableViewController.m
 //  Password Screen
 //
-//  Created by Conor Williams [el16cbw] on 23/11/2017.
+//  Created by Conor Williams [el16cbw] on 27/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "BeginRotaTableViewController.h"
+#import "CreateRotaTableViewController.h"
 
-@interface BeginRotaTableViewController ()
+@interface CreateRotaTableViewController ()
 
 @end
 
-@implementation BeginRotaTableViewController
+@implementation CreateRotaTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = [[StaffInfoDataModel alloc] init];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,30 +28,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 10;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"staffNameCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
-    
-    StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text =tempStaffInformation.name;
-    
-    
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -100,27 +88,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-
-    if ([[segue identifier] isEqualToString:@"nextButtonPressed"]) {
-        self.dateEntered = self.enterDateField.text;
-        NSLog(@"date is %@", self.dateEntered);
-        
-        
-    }
-
+    
 }
 
-
-- (IBAction)beginRotaBackButton:(id)sender { //returns to selectFunction
-}
-
-- (IBAction)staffNameSelected:(id)sender { //Switch next to name turned 'on'
-}
-- (IBAction)dateFieldSelected:(id)sender { //user inputs date
-}
-
-- (IBAction)nextButtonPressed:(id)sender {
-    self.dateEntered = self.enterDateField.text;
-    NSLog(@"date is %@", self.dateEntered);
-}
 @end
