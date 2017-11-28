@@ -29,7 +29,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return 8;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -46,6 +46,41 @@
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if(section == 0)
+    {
+        return @"Green Dragon";
+    }
+    else if(section == 1)
+    {
+        return @"Solar Splash";
+    }
+    if(section == 2)
+    {
+        return @"Moon Karts";
+    }
+    else if(section == 3)
+    {
+        return @"Jungle Boats";
+    }
+    if(section == 4)
+    {
+        return @"Slide";
+    }
+    else if(section == 5)
+    {
+        return @"Pillow";
+    }
+    if(section == 6)
+    {
+        return @"Archery";
+    }
+    else
+    {
+        return @"Costume";
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
