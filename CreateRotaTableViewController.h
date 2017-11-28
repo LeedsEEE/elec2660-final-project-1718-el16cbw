@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BeginRotaTableViewController.h"
+#import "CustomCreateRotaTableViewCell.h"
 
 @interface CreateRotaTableViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
