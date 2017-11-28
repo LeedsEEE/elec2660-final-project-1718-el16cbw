@@ -31,6 +31,7 @@
 		23C4FFB81FC6D73000D6566D /* Face8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB71FC6D73000D6566D /* Face8.jpg */; };
 		23C4FFBA1FC6D73500D6566D /* Face9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB91FC6D73500D6566D /* Face9.jpg */; };
 		23C4FFBC1FC6D76E00D6566D /* Face10.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFBB1FC6D76E00D6566D /* Face10.JPG */; };
+		23D9C8A51FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9C8A41FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m */; };
 		23DC7BD21FCC6C72006C936F /* CreateRotaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC7BD11FCC6C72006C936F /* CreateRotaTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		23C4FFB71FC6D73000D6566D /* Face8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face8.jpg; sourceTree = "<group>"; };
 		23C4FFB91FC6D73500D6566D /* Face9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face9.jpg; sourceTree = "<group>"; };
 		23C4FFBB1FC6D76E00D6566D /* Face10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face10.JPG; sourceTree = "<group>"; };
+		23D9C8A31FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBeginRotaTableViewCell.h; sourceTree = "<group>"; };
+		23D9C8A41FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBeginRotaTableViewCell.m; sourceTree = "<group>"; };
 		23DC7BD01FCC6C72006C936F /* CreateRotaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateRotaTableViewController.h; path = ../CreateRotaTableViewController.h; sourceTree = "<group>"; };
 		23DC7BD11FCC6C72006C936F /* CreateRotaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateRotaTableViewController.m; path = ../CreateRotaTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +154,8 @@
 				231B8F481FC3118400360A90 /* Main.storyboard */,
 				2337260C1FC73B5C008D7912 /* BeginRotaTableViewController.h */,
 				2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */,
+				23D9C8A31FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.h */,
+				23D9C8A41FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m */,
 				23DC7BD01FCC6C72006C936F /* CreateRotaTableViewController.h */,
 				23DC7BD11FCC6C72006C936F /* CreateRotaTableViewController.m */,
 				231B8F781FC32EAA00360A90 /* StaffListTableViewController.h */,
@@ -348,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D9C8A51FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m in Sources */,
 				231B8F471FC3118400360A90 /* ViewController.m in Sources */,
 				231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */,
 				2337260E1FC73B5C008D7912 /* BeginRotaTableViewController.m in Sources */,

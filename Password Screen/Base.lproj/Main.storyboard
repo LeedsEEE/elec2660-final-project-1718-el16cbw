@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -272,22 +272,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="staffNameCell" id="cnb-Z6-OWA">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="staffNameCell" id="cnb-Z6-OWA" customClass="CustomBeginRotaTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cnb-Z6-OWA" id="2PA-j8-lpo">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8Z-u6-uCl">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8Z-u6-uCl">
                                             <frame key="frameInset" minX="318" minY="6" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="dBc-6a-L1i"/>
+                                                <constraint firstAttribute="width" constant="49" id="hpC-kU-7fH"/>
+                                            </constraints>
                                             <connections>
                                                 <action selector="staffNameSelected:" destination="6xW-Qr-Joe" eventType="valueChanged" id="BQM-Zm-4wn"/>
+                                                <action selector="staffSelectSwitchPressed:" destination="cnb-Z6-OWA" eventType="valueChanged" id="bbl-1b-BMw"/>
                                             </connections>
                                         </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Staff Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Q-bP-tdK">
+                                            <frame key="frameInset" minX="8" minY="6" width="274" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="Nsv-yJ-aa3"/>
+                                                <constraint firstAttribute="width" constant="274" id="f0t-Qt-zFN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="51Q-bP-tdK" firstAttribute="top" secondItem="2PA-j8-lpo" secondAttribute="top" constant="6" id="JNf-yJ-yND"/>
+                                        <constraint firstItem="51Q-bP-tdK" firstAttribute="leading" secondItem="2PA-j8-lpo" secondAttribute="leading" constant="6" id="N6x-vk-iBr"/>
+                                        <constraint firstItem="q8Z-u6-uCl" firstAttribute="top" secondItem="2PA-j8-lpo" secondAttribute="top" constant="6" id="OxX-1y-i7y"/>
+                                        <constraint firstAttribute="bottom" secondItem="51Q-bP-tdK" secondAttribute="bottom" constant="6" id="gP2-6x-tgh"/>
+                                        <constraint firstAttribute="bottom" secondItem="q8Z-u6-uCl" secondAttribute="bottom" constant="6" id="r9b-0O-f0W"/>
+                                        <constraint firstAttribute="trailing" secondItem="q8Z-u6-uCl" secondAttribute="trailing" constant="6" id="xaA-dR-j3c"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="staffNameLabel" destination="51Q-bP-tdK" id="Vy4-Je-4qn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -343,7 +368,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWm-Iv-LCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="-321"/>
+            <point key="canvasLocation" x="2805.5999999999999" y="-321.58920539730138"/>
         </scene>
         <!--Create Rota Table View Controller-->
         <scene sceneID="vUh-GL-7Fr">
@@ -354,7 +379,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lnJ-M7-vRM">
-                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
@@ -362,7 +387,7 @@
                         </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="4gX-1F-Bbr">
-                                <rect key="frame" x="0.0" y="136" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4gX-1F-Bbr" id="0Pc-Q0-3gV">
                                     <frame key="frameInset" width="375" height="39"/>

@@ -10,8 +10,11 @@
 #import "StaffInformation.h"
 #import "StaffInfoDataModel.h"
 #import "CreateRotaTableViewController.h"
+#import "CustomBeginRotaTableViewCell.h"
+
 
 @interface BeginRotaTableViewController : UITableViewController
+
 
 @property (strong, nonatomic) StaffInfoDataModel *data;
 @property (strong, nonatomic) NSString *dateEntered;
@@ -23,3 +26,4 @@
 - (IBAction)nextButtonPressed:(id)sender;
 
 @end
+

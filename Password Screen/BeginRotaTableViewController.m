@@ -45,14 +45,15 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"staffNameCell" forIndexPath:indexPath];
+    
+    CustomBeginRotaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"staffNameCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     
     StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
     
-    cell.textLabel.text =tempStaffInformation.name;
+    cell.staffNameLabel.text =tempStaffInformation.name;
     
     
     return cell;
