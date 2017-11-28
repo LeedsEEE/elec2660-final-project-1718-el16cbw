@@ -354,11 +354,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="26i-UJ-aYs" kind="show" identifier="" id="JbJ-bs-D0R"/>
+                                    <segue destination="26i-UJ-aYs" kind="show" identifier="nextButtonPressed" id="JbJ-bs-D0R"/>
                                 </connections>
                             </button>
                             <connections>
-                                <action selector="nextButtonPressed:" destination="6xW-Qr-Joe" id="IGW-84-c76"/>
+                                <action selector="nextButtonPressed:" destination="6xW-Qr-Joe" id="5XM-Sf-kuG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -378,9 +378,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HT4-da-stk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeSelectCell" id="cgU-tp-5y5" customClass="CustomCreateRotaTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="cgU-tp-5y5" id="wh6-9b-kUf">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -463,6 +470,9 @@
                             <outlet property="delegate" destination="26i-UJ-aYs" id="auV-vm-0Jr"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="dateLabel" destination="HT4-da-stk" id="dnv-uk-Pag"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3B-5X-qc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

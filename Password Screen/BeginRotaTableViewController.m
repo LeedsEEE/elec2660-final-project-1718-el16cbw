@@ -101,14 +101,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-
-    if ([[segue identifier] isEqualToString:@"nextButtonPressed"]) {
+    nil;
+    if([[segue identifier] isEqualToString:@"nextButtonPressed"]){
+        
+        CreateRotaTableViewController *createRotaView = [segue destinationViewController];
+        
         self.dateEntered = self.enterDateField.text;
-        NSLog(@"date is %@", self.dateEntered);
         
-        
-    }
+        createRotaView.dateLabel.text = self.dateEntered;
 
+    }
 }
 
 
@@ -122,6 +124,7 @@
 
 - (IBAction)nextButtonPressed:(id)sender {
     self.dateEntered = self.enterDateField.text;
-    NSLog(@"date is %@", self.dateEntered);
+    NSLog(@"Date is %@", _dateEntered);
 }
+
 @end

@@ -11,7 +11,8 @@
 #import "CustomCreateRotaTableViewCell.h"
 
 @interface CreateRotaTableViewController : UITableViewController
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (nonatomic, strong) NSString *dateEntered;
 
 @end

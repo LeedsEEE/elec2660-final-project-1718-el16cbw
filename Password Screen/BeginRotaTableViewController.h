@@ -21,9 +21,12 @@
 
 - (IBAction)beginRotaBackButton:(id)sender;
 - (IBAction)staffNameSelected:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *enterDateField;
+
 - (IBAction)dateFieldSelected:(id)sender;
 - (IBAction)nextButtonPressed:(id)sender;
+
 
 @end
 
