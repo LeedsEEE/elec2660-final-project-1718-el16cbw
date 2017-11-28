@@ -109,7 +109,8 @@
         self.dateEntered = self.enterDateField.text;
         
         createRotaView.dateLabel.text = self.dateEntered;
-
+        
+        NSLog(@"date is %@", self.dateEntered);
     }
 }
 
@@ -123,8 +124,7 @@
 }
 
 - (IBAction)nextButtonPressed:(id)sender {
-    self.dateEntered = self.enterDateField.text;
-    NSLog(@"Date is %@", _dateEntered);
+
 }
 
 @end
