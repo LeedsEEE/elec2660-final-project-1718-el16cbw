@@ -34,7 +34,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 3;
+    NSInteger numberOfRows;
+    
+    if (section == 0) {
+        numberOfRows = self.staffData.staffInformation.count;
+        NSLog(@"number of rows is %ld" , numberOfRows);
+    return numberOfRows;
+    
+    }
+    else {
+        return 3;
+    }
 }
 
 
@@ -56,7 +66,7 @@
     {
         return @"Solar Splash";
     }
-    if(section == 2)
+    else if(section == 2)
     {
         return @"Moon Karts";
     }
@@ -64,7 +74,7 @@
     {
         return @"Jungle Boats";
     }
-    if(section == 4)
+    else if(section == 4)
     {
         return @"Slide";
     }
@@ -72,7 +82,7 @@
     {
         return @"Pillow";
     }
-    if(section == 6)
+    else if(section == 6)
     {
         return @"Archery";
     }
