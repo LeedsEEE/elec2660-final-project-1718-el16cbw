@@ -45,7 +45,6 @@
     
     if(section == 0) {
         numberOfRows = self.data.staffInformation.count; //number of rows matches number of staff in datamodel
-        NSLog(@"number of rows: %ld", numberOfRows);
     }
     return numberOfRows;
 }

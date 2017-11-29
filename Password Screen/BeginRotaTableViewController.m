@@ -39,8 +39,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 10;
+    
+    NSInteger numberOfRows;
+    
+    if(section == 0) {
+        numberOfRows = self.data.staffInformation.count; //number of rows matches number of staff in datamodel
+    }
+    return numberOfRows;
 }
 
 

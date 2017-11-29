@@ -446,7 +446,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="endTimeTextField" destination="wMU-Y7-Dqp" id="8kh-bt-2nJ"/>
-                                    <outlet property="nameLabel" destination="umg-bf-TmS" id="I2X-nM-5rz"/>
+                                    <outlet property="nameLabel" destination="umg-bf-TmS" id="pWt-H9-bKm"/>
                                     <outlet property="startTimeTextField" destination="6ut-pd-UMX" id="qy8-ci-QEz"/>
                                 </connections>
                             </tableViewCell>

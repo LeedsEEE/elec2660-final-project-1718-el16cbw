@@ -17,12 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.data = [[StaffInfoDataModel alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
 
 #pragma mark - Table view data source
@@ -36,23 +38,22 @@
 
     NSInteger numberOfRows;
     
-    if (section == 0) {
-        numberOfRows = self.staffData.staffInformation.count;
-        NSLog(@"number of rows is %ld" , numberOfRows);
-    }
-    
-    else {
-        numberOfRows = 3;
-    }
+        numberOfRows = self.data.staffInformation.count;
+
     return numberOfRows;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"timeSelectCell" forIndexPath:indexPath];
     
-    tableView.allowsSelection = NO;
+    CustomCreateRotaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"timeSelectCell" forIndexPath:indexPath];
+    
+    tableView.allowsSelection = NO; //remoes cell highlighting code found from: https://stackoverflow.com/questions/190908/how-can-i-disable-the-uitableview-selection-highlighting?rq=1
     // Configure the cell...
+    
+    StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
+    cell.nameLabel.text = tempStaffInformation.name;
+
     
     return cell;
 }

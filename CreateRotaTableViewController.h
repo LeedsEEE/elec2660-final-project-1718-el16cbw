@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "BeginRotaTableViewController.h"
 #import "CustomCreateRotaTableViewCell.h"
+#import "StaffInformation.h"
+#import "StaffInfoDataModel.h"
 
 @interface CreateRotaTableViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (nonatomic, strong) NSString *dateEntered;
-@property (strong, nonatomic) StaffInfoDataModel *staffData;
+@property (strong, nonatomic) StaffInfoDataModel *data;
+@property (strong, nonatomic) CustomCreateRotaTableViewCell *customCell;
 
 @end
