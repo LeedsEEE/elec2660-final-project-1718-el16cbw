@@ -14,9 +14,9 @@
 
 @interface CreateRotaTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-@property (nonatomic, strong) NSString *dateEntered;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) StaffInfoDataModel *data;
 @property (strong, nonatomic) CustomCreateRotaTableViewCell *customCell;
+
 
 @end

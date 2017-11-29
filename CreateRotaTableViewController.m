@@ -18,7 +18,6 @@
     [super viewDidLoad];
     
     self.data = [[StaffInfoDataModel alloc] init];
-
 }
 
 - (void)didReceiveMemoryWarning {
