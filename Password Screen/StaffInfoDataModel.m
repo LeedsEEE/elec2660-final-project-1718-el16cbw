@@ -26,6 +26,9 @@
         UIImage *image1 = [UIImage imageNamed:@"Face1.jpg"];
         name1.staffPhoto = image1;
         
+
+        
+        
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name2 = [[StaffInformation alloc] init];
         name2.name = @"Declan Williams";

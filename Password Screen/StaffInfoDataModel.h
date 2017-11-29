@@ -10,6 +10,7 @@
 #import "StaffInformation.h"
 #import "StaffInfoViewController.h"
 #import <UIKit/UIKit.h>
+#import "CustomBeginRotaTableViewCell.h"
 
 @interface StaffInfoDataModel : NSObject
 

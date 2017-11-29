@@ -39,18 +39,19 @@
     if (section == 0) {
         numberOfRows = self.staffData.staffInformation.count;
         NSLog(@"number of rows is %ld" , numberOfRows);
-    return numberOfRows;
+    }
     
-    }
     else {
-        return 3;
+        numberOfRows = 3;
     }
+    return numberOfRows;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"timeSelectCell" forIndexPath:indexPath];
     
+    tableView.allowsSelection = NO;
     // Configure the cell...
     
     return cell;

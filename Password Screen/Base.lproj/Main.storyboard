@@ -271,6 +271,15 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Staff Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Q-bP-tdK">
+                                            <frame key="frameInset" minX="8" minY="6" width="274" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="274" id="f0t-Qt-zFN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q8Z-u6-uCl">
                                             <frame key="frameInset" minX="318" minY="6" width="51" height="31"/>
                                             <constraints>
@@ -281,15 +290,6 @@
                                                 <action selector="staffSelectSwitchPressed:" destination="cnb-Z6-OWA" eventType="valueChanged" id="bbl-1b-BMw"/>
                                             </connections>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Staff Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Q-bP-tdK">
-                                            <frame key="frameInset" minX="8" minY="6" width="274" height="37"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="274" id="f0t-Qt-zFN"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="51Q-bP-tdK" firstAttribute="top" secondItem="2PA-j8-lpo" secondAttribute="top" constant="6" id="JNf-yJ-yND"/>
