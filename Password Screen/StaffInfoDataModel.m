@@ -21,7 +21,7 @@
         name1.dateJoined = @"Joined on: 15/02/2014";
         name1.emergencyContactName = @"Emergency contact name: Luce Kelly";
         name1.emergencyContactNumber = @"Emergency contact number: 07584126589";
-        name1.languagesSpoken = @"Speaks: Enlgish, Welsh";
+        name1.languagesSpoken = @"Speaks: English, Welsh";
         name1.trainedOn = @"Trained on: Green Dragon, Solar Splash, Moon Karts, Jungle Boats, Slide, Pillow, Archery, Costume";
         UIImage *image1 = [UIImage imageNamed:@"Face1.jpg"];
         name1.staffPhoto = image1;
@@ -32,7 +32,7 @@
         name2.dateJoined = @"Joined on: 25/04/2016";
         name2.emergencyContactName = @"Emergency contact name: Mark Williams";
         name2.emergencyContactNumber = @"Emergency contact number: 0779258432";
-        name2.languagesSpoken = @"Speaks: Enlgish, Welsh";
+        name2.languagesSpoken = @"Speaks: English, Welsh";
         name2.trainedOn = @"Trained on: Moon Karts, Jungle Boats, Slide, Pillow";
         UIImage *image2 = [UIImage imageNamed:@"Face2.jpg"];
         name2.staffPhoto = image2;
@@ -43,7 +43,7 @@
         name3.dateJoined = @"Joined on: 27/03/2012";
         name3.emergencyContactName = @"Emergency contact name: Mark Williams";
         name3.emergencyContactNumber = @"Emergency contact number: 07548474595";
-        name3.languagesSpoken = @"Speaks: Enlgish, Welsh";
+        name3.languagesSpoken = @"Speaks: English, Welsh";
         name3.trainedOn = @"Trained on: Green Dragon, Solar Splash, Moon Karts, Jungle Boats, Slide, Pillow, Archery";
         UIImage *image3  = [UIImage imageNamed:@"Face3.jpg"];
         name3.staffPhoto = image3;
@@ -54,7 +54,7 @@
         name4.dateJoined = @"Joined on: 03/02/2015";
         name4.emergencyContactName = @"Emergency contact name: Brienne Brianson";
         name4.emergencyContactNumber = @"Emergency contact number: 07234126589";
-        name4.languagesSpoken = @"Speaks: Enlgish, Welsh, Polish";
+        name4.languagesSpoken = @"Speaks: English, Welsh, Polish";
         name4.trainedOn = @"Trained on: Green Dragon, Moon Karts, Jungle Boats, Slide, Pillow";
         UIImage *image4 = [UIImage imageNamed:@"Face4.jpg"];
         name4.staffPhoto = image4;
@@ -65,7 +65,7 @@
         name5.dateJoined = @"Joined on: 23/05/2016";
         name5.emergencyContactName = @"Emergency contact name: Anna vonTrinklestein";
         name5.emergencyContactNumber = @"Emergency contact number: 07584175314";
-        name5.languagesSpoken = @"Speaks: Enlgish, Russian";
+        name5.languagesSpoken = @"Speaks: English, Russian";
         name5.trainedOn = @"Trained on: Moon Karts, Jungle Boats, Slide, Pillow, Archery";
         UIImage *image5 = [UIImage imageNamed:@"Face5.jpg"];
         name5.staffPhoto = image5;
@@ -76,7 +76,7 @@
         name6.dateJoined = @"Joined on: 11/3/2010";
         name6.emergencyContactName = @"Emergency contact name: Susan Kelly";
         name6.emergencyContactNumber = @"Emergency contact number: 07574446589";
-        name6.languagesSpoken = @"Speaks: Enlgish";
+        name6.languagesSpoken = @"Speaks: English";
         name6.trainedOn = @"Trained on: Green Dragon, Solar Splash, Moon Karts, Jungle Boats, Slide, Pillow, Archery";
         UIImage *image6 = [UIImage imageNamed:@"Face6.png"];
         name6.staffPhoto = image6;
@@ -87,7 +87,7 @@
         name7.dateJoined = @"Joined on: 21/03/2015";
         name7.emergencyContactName = @"Emergency contact name: Holly Meacher";
         name7.emergencyContactNumber = @"Emergency contact number: 07777796523";
-        name7.languagesSpoken = @"Speaks: Enlgish, Welsh, French";
+        name7.languagesSpoken = @"Speaks: English, Welsh, French";
         name7.trainedOn = @"Trained on: Moon Karts, Jungle Boats, Slide, Pillow, Archery";
         UIImage *image7 = [UIImage imageNamed:@"Face7.jpg"];
         name7.staffPhoto = image7;
@@ -98,18 +98,18 @@
         name8.dateJoined = @"Joined on: 12/03/2012";
         name8.emergencyContactName = @"Emergency contact name: Stephen Jones";
         name8.emergencyContactNumber = @"Emergency contact number: 07989854632";
-        name8.languagesSpoken = @"Speaks: Enlgish, Welsh";
+        name8.languagesSpoken = @"Speaks: English, Welsh";
         name8.trainedOn = @"Trained on: Green Dragon, Solar Splash, Moon Karts, Jungle Boats, Slide, Pillow, Archery";
         UIImage *image8  = [UIImage imageNamed:@"Face8.jpg"];
         name8.staffPhoto = image8;
         
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name9 = [[StaffInformation alloc] init];
-        name9.name = @"Phil Coulson";
-        name9.dateJoined = @"Joined on: 13/04/2015";
-        name9.emergencyContactName = @"Emergency contact name: Nicholas Fury";
+        name9.name = @"Luce Kelly";
+        name9.dateJoined = @"Joined on: 16/02/2015";
+        name9.emergencyContactName = @"Emergency contact name: Conor Williams";
         name9.emergencyContactNumber = @"Emergency contact number: 07788899900";
-        name9.languagesSpoken = @"Speaks: Enlgish, Welsh, Spanish, French";
+        name9.languagesSpoken = @"Speaks: English, Welsh, Spanish, Mongolian";
         name9.trainedOn = @"Trained on: Green Dragon, Moon Karts, Jungle Boats, Slide, Pillow  Archery, Costume";
         UIImage *image9 = [UIImage imageNamed:@"Face9.jpg"];
         name9.staffPhoto = image9;
@@ -120,7 +120,7 @@
         name10.dateJoined = @"Joined on: 30/01/2014";
         name10.emergencyContactName = @"Emergency contact name: Mark Waterson";
         name10.emergencyContactNumber = @"Emergency contact number: 07554862541";
-        name10.languagesSpoken = @"Speaks: Enlgish, German";
+        name10.languagesSpoken = @"Speaks: English, German";
         name10.trainedOn = @"Trained on: Solar Splash, Moon Karts, Slide, Jungle Boats Pillow, Archery";
         UIImage *image10 = [UIImage imageNamed:@"Face10.jpg"];
         name10.staffPhoto = image10;

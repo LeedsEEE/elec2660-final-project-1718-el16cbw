@@ -20,6 +20,7 @@
 		231B8F7A1FC32EAA00360A90 /* StaffListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F791FC32EAA00360A90 /* StaffListTableViewController.m */; };
 		231B8F7D1FC33F2600360A90 /* StaffInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */; };
 		231B8F801FC3433200360A90 /* StaffInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 231B8F7F1FC3433200360A90 /* StaffInformation.m */; };
+		232EBF1A1FD72BDA00C2E4FB /* Face9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 232EBF191FD72BDA00C2E4FB /* Face9.jpg */; };
 		2337260E1FC73B5C008D7912 /* BeginRotaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */; };
 		23C4FFAA1FC6CB5900D6566D /* Face2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFA91FC6CB5900D6566D /* Face2.jpg */; };
 		23C4FFAC1FC6CB6800D6566D /* Face3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFAB1FC6CB6800D6566D /* Face3.jpg */; };
@@ -29,7 +30,7 @@
 		23C4FFB41FC6D5AB00D6566D /* Face1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB31FC6D5AB00D6566D /* Face1.jpg */; };
 		23C4FFB61FC6D72600D6566D /* Face11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB51FC6D72600D6566D /* Face11.jpg */; };
 		23C4FFB81FC6D73000D6566D /* Face8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB71FC6D73000D6566D /* Face8.jpg */; };
-		23C4FFBA1FC6D73500D6566D /* Face9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB91FC6D73500D6566D /* Face9.jpg */; };
+		23C4FFBA1FC6D73500D6566D /* Face12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFB91FC6D73500D6566D /* Face12.jpg */; };
 		23C4FFBC1FC6D76E00D6566D /* Face10.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 23C4FFBB1FC6D76E00D6566D /* Face10.JPG */; };
 		23D9C8A51FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9C8A41FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m */; };
 		23D9C8A81FCD94B0000E87D1 /* CustomCreateRotaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9C8A71FCD94B0000E87D1 /* CustomCreateRotaTableViewCell.m */; };
@@ -81,6 +82,7 @@
 		231B8F7C1FC33F2600360A90 /* StaffInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInfoDataModel.m; sourceTree = "<group>"; };
 		231B8F7E1FC3433200360A90 /* StaffInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffInformation.h; sourceTree = "<group>"; };
 		231B8F7F1FC3433200360A90 /* StaffInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffInformation.m; sourceTree = "<group>"; };
+		232EBF191FD72BDA00C2E4FB /* Face9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face9.jpg; sourceTree = "<group>"; };
 		2337260C1FC73B5C008D7912 /* BeginRotaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginRotaTableViewController.h; sourceTree = "<group>"; };
 		2337260D1FC73B5C008D7912 /* BeginRotaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginRotaTableViewController.m; sourceTree = "<group>"; };
 		23C4FFA91FC6CB5900D6566D /* Face2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face2.jpg; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		23C4FFB31FC6D5AB00D6566D /* Face1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face1.jpg; sourceTree = "<group>"; };
 		23C4FFB51FC6D72600D6566D /* Face11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face11.jpg; sourceTree = "<group>"; };
 		23C4FFB71FC6D73000D6566D /* Face8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face8.jpg; sourceTree = "<group>"; };
-		23C4FFB91FC6D73500D6566D /* Face9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face9.jpg; sourceTree = "<group>"; };
+		23C4FFB91FC6D73500D6566D /* Face12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face12.jpg; sourceTree = "<group>"; };
 		23C4FFBB1FC6D76E00D6566D /* Face10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Face10.JPG; sourceTree = "<group>"; };
 		23D9C8A31FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBeginRotaTableViewCell.h; sourceTree = "<group>"; };
 		23D9C8A41FCD8E1A000E87D1 /* CustomBeginRotaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBeginRotaTableViewCell.m; sourceTree = "<group>"; };
@@ -184,9 +186,10 @@
 				23C4FFB11FC6CBA000D6566D /* Face6.png */,
 				23D9C8A91FCDADC7000E87D1 /* Face7.jpg */,
 				23C4FFB71FC6D73000D6566D /* Face8.jpg */,
-				23C4FFB91FC6D73500D6566D /* Face9.jpg */,
+				232EBF191FD72BDA00C2E4FB /* Face9.jpg */,
 				23C4FFBB1FC6D76E00D6566D /* Face10.JPG */,
 				23C4FFB51FC6D72600D6566D /* Face11.jpg */,
+				23C4FFB91FC6D73500D6566D /* Face12.jpg */,
 				231B8F3F1FC3118400360A90 /* Supporting Files */,
 			);
 			path = "Password Screen";
@@ -328,8 +331,9 @@
 				23C4FFB41FC6D5AB00D6566D /* Face1.jpg in Resources */,
 				231B8F4F1FC3118400360A90 /* LaunchScreen.storyboard in Resources */,
 				231B8F4C1FC3118400360A90 /* Assets.xcassets in Resources */,
+				232EBF1A1FD72BDA00C2E4FB /* Face9.jpg in Resources */,
 				23D9C8AA1FCDADC7000E87D1 /* Face7.jpg in Resources */,
-				23C4FFBA1FC6D73500D6566D /* Face9.jpg in Resources */,
+				23C4FFBA1FC6D73500D6566D /* Face12.jpg in Resources */,
 				23C4FFAA1FC6CB5900D6566D /* Face2.jpg in Resources */,
 				23C4FFB01FC6CB9700D6566D /* Face5.jpg in Resources */,
 				23C4FFAC1FC6CB6800D6566D /* Face3.jpg in Resources */,
