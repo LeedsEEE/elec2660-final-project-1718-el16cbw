@@ -113,11 +113,31 @@
         
         self.dateEntered = self.enterDateField.text;
         
-        createRotaView.dateLabel.text = self.dateEntered;
+        createRotaView.dateLabel.text = self.dateEntered;  //set date label in create rota page to dsplay date
         
         NSLog(@"date is %@", self.dateEntered);
+    
+    
+    NSMutableArray *staffSwitchStates = [NSMutableArray array];
+    
+    
+        for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){
+
+            CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
+            /*bool switchState = tempCell.switchOutlet.on;*/
+            if(tempCell.switchOutlet.isOn){
+                [staffSwitchStates addObject:tempCell];
+            }
+            
+        }
+        
+        NSInteger arrayLength = sizeof(staffSwitchStates);
+        NSLog(@"NUMBER OF STAFF SELECTED: %ld" , arrayLength);
+
+        
     }
 }
+
 
 
 - (IBAction)beginRotaBackButton:(id)sender { //returns to selectFunction
