@@ -18,5 +18,7 @@
 @property (strong, nonatomic) StaffInfoDataModel *data;
 @property (strong, nonatomic) CustomCreateRotaTableViewCell *customCell;
 
+@property (strong, nonatomic) NSMutableArray *staffSwitchStates;
+
 
 @end

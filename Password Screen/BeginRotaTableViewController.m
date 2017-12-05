@@ -53,8 +53,6 @@
     
     CustomBeginRotaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"staffNameCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
     
     StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
     
@@ -106,35 +104,34 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    nil;
+    
     if([[segue identifier] isEqualToString:@"nextButtonPressed"]){
         
         CreateRotaTableViewController *createRotaView = [segue destinationViewController];
         
-        self.dateEntered = self.enterDateField.text;
+        UIView *unusedReferenceToViewToLoadTheView = createRotaView.view;
         
+        self.dateEntered = self.enterDateField.text;
+
         createRotaView.dateLabel.text = self.dateEntered;  //set date label in create rota page to dsplay date
         
         NSLog(@"date is %@", self.dateEntered);
     
     
-    NSMutableArray *staffSwitchStates = [NSMutableArray array];
-    
-    
-        for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){
+        /* for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){
 
             CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
-            /*bool switchState = tempCell.switchOutlet.on;*/
-            if(tempCell.switchOutlet.isOn){
-                [staffSwitchStates addObject:tempCell];
+            bool switchState = tempCell.switchOutlet.on;
+            if(switchState){
+                [staffSwitchStates addObject:];
             }
-            
+
         }
         
-        NSInteger arrayLength = sizeof(staffSwitchStates);
+        NSInteger arrayLength = staffSwitchStates.count; //count number of staff stiwched on
         NSLog(@"NUMBER OF STAFF SELECTED: %ld" , arrayLength);
 
-        
+        */
     }
 }
 
