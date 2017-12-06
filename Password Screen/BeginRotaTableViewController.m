@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = [[StaffInfoDataModel alloc] init];
+    self.data = [[StaffInfoDataModel alloc] init];  //initialise array with staff information from data model
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -56,7 +56,7 @@
     
     StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
     
-    cell.staffNameLabel.text =tempStaffInformation.name;
+    cell.staffNameLabel.text =tempStaffInformation.name;  //set label to display staff name from data model
     
     
     return cell;
@@ -107,24 +107,24 @@
     
     if([[segue identifier] isEqualToString:@"nextButtonPressed"]){
         
-        CreateRotaTableViewController *createRotaView = [segue destinationViewController];
+        CreateRotaTableViewController *createRotaView = [segue destinationViewController];  //next view
         
-        UIView *unusedReferenceToViewToLoadTheView = createRotaView.view;
+        UIView *unusedReferenceToViewToLoadTheView = createRotaView.view; //initialises next view
         
-        self.dateEntered = self.enterDateField.text;
+        self.dateEntered = self.enterDateField.text; //get user input
 
-        createRotaView.dateLabel.text = self.dateEntered;  //set date label in create rota page to dsplay date
+        createRotaView.dateLabel.text = self.dateEntered;  //set date label in create rota page to display date
         
-        NSLog(@"date is %@", self.dateEntered);
+        NSLog(@"date is %@", self.dateEntered); //print date
     
-        NSMutableArray *staffSwitchStates = [NSMutableArray array];
+        NSMutableArray *staffSwitchStates = [NSMutableArray array]; //array of staff members selected
         
-        for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){
+        for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){  //cycle through all cells
 
             CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
-            bool switchState = tempCell.switchOutlet.on;
+            bool switchState = tempCell.switchOutlet.on; //check switch state
             if(switchState){
-                [staffSwitchStates addObject:tempCell];
+                [staffSwitchStates addObject:tempCell]; //if switched on add to array
             }
 
         }

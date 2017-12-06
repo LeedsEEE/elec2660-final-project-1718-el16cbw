@@ -47,8 +47,9 @@
     
     CustomCreateRotaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"timeSelectCell" forIndexPath:indexPath];
     
-    tableView.allowsSelection = NO; //remoes cell highlighting code found from: https://stackoverflow.com/questions/190908/how-can-i-disable-the-uitableview-selection-highlighting?rq=1
-    // Configure the cell...
+    tableView.allowsSelection = NO; //removes cell highlighting code found from: https://stackoverflow.com/questions/190908/how-can-i-disable-the-uitableview-selection-highlighting?rq=1
+    
+    // Configure the cell
     
     StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
     cell.nameLabel.text = tempStaffInformation.name;

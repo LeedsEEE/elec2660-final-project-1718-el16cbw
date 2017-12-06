@@ -35,8 +35,8 @@
     }
     else { //password doesn't match
         NSLog(@"password is incorrect");
-        UIAlertController *incorrectPasswordAlert = [UIAlertController alertControllerWithTitle:@"Incorrect Password" message:@"Please Try Again" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertController *incorrectPasswordAlert = [UIAlertController alertControllerWithTitle:@"Incorrect Password" message:@"Please Try Again" preferredStyle:UIAlertControllerStyleAlert]; //warning pop up if incorrect password entered
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]; //returns to view to re-input password
         [incorrectPasswordAlert addAction:okButton];
         [self presentViewController:incorrectPasswordAlert animated:YES completion:nil];
     }
