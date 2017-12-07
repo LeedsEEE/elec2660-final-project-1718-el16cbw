@@ -18,8 +18,7 @@
     [super viewDidLoad];
     
     self.data = [[StaffInfoDataModel alloc] init];
-    self.staffSwitchStates = [[NSMutableArray alloc] init];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +38,7 @@
 
     NSInteger numberOfRows;
     
-        numberOfRows = self.data.staffInformation.count;
+        numberOfRows = self.staffSwitchStates.count;
 
     return numberOfRows;
 }

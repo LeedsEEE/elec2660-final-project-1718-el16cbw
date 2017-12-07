@@ -125,15 +125,14 @@
             //bool switchState = tempCell.switchOutlet.on; //check switch state
             if(tempCell.staffSwitchOutlet.on){
                 [self.staffSwitchStates addObject:tempCell]; //if switched on add to array
-                NSLog(@"IS SWITCH ON");
             }
 
         }
         
         NSInteger arrayLength = self.staffSwitchStates.count; //count number of staff stiwched on
         NSLog(@"NUMBER OF STAFF SELECTED: %ld" , arrayLength);
-        NSLog(@"Array: %@", self.staffSwitchStates);
         
+        createRotaView.staffSwitchStates = self.staffSwitchStates;
     }
 }
 
