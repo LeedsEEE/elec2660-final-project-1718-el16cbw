@@ -116,15 +116,18 @@
         createRotaView.dateLabel.text = self.dateEntered;  //set date label in create rota page to display date
         
         NSLog(@"date is %@", self.dateEntered); //print date
-    
+        
         self.staffSwitchStates = [[NSMutableArray alloc]init];
         
         for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){  //cycle through all cells
 
             CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
+
+            StaffInformation *tempStaffInfo = [self.data.staffInformation objectAtIndex:j];
+            
             //bool switchState = tempCell.switchOutlet.on; //check switch state
             if(tempCell.staffSwitchOutlet.on){
-                [self.staffSwitchStates addObject:tempCell]; //if switched on add to array
+                [self.staffSwitchStates addObject:tempStaffInfo]; //if switched on add to array
             }
 
         }

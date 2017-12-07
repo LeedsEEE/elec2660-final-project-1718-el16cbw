@@ -52,10 +52,9 @@
     
     // Configure the cell
     
-    StaffInformation *tempStaffInformation = [self.data.staffInformation objectAtIndex:indexPath.row];
+    StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
     cell.nameLabel.text = tempStaffInformation.name;
 
-    
     return cell;
 }
 
