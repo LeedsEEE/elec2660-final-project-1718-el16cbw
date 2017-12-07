@@ -38,7 +38,7 @@
 
     NSInteger numberOfRows;
     
-        numberOfRows = self.staffSwitchStates.count;
+        numberOfRows = self.staffWorking.count;
 
     return numberOfRows;
 }

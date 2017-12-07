@@ -109,7 +109,7 @@
         
         CreateRotaTableViewController *createRotaView = [segue destinationViewController];  //next view
         
-        UIView *unusedReferenceToViewToLoadTheView = createRotaView.view; //initialises next view
+        UIView *unusedReferenceToViewToLoadTheView = createRotaView.view; /* loads next view....line found here https://stackoverflow.com/questions/36389340/passing-uitextfield-text-to-uilabel-on-different-view-controller */
         
         self.dateEntered = self.enterDateField.text; //get user input
 
@@ -132,7 +132,7 @@
         NSInteger arrayLength = self.staffSwitchStates.count; //count number of staff stiwched on
         NSLog(@"NUMBER OF STAFF SELECTED: %ld" , arrayLength);
         
-        createRotaView.staffSwitchStates = self.staffSwitchStates;
+        createRotaView.staffWorking = self.staffSwitchStates; //pass array onto next view
     }
 }
 
