@@ -55,8 +55,17 @@
     StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
     cell.nameLabel.text = tempStaffInformation.name;
 
+    if(indexPath.section == 1){
+        for(NSInteger j = 0 ; j < 10 ; j++) { //cycle through rows in section
+            if([cell.nameLabel.text isEqualToString:@"Conor Williams"]) {
+                cell.nameLabel.text = @"Conor Williams *";
+            }
+        }
+    }
     return cell;
 
+    
+    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -108,28 +117,26 @@
 
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+/* - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger i = 0; //section
-    NSInteger j = 0; //row
-    NSInteger height = 44; //row height
+
+    CGFloat heightOfRow = 44; //row height
     
-    NSIndexPath *staffWorkingCell = [NSIndexPath indexPathForRow:j inSection:i ];
-
-    if(i == 0){
-        for(j = 0 ; j < self.staffWorking.count ; j ++) { //cycle through rows in section
+    //NSIndexPath *staffWorkingCell = [NSIndexPath indexPathForRow:j inSection:i ];
+    
+    if(indexPath.section == 1){
+        for(NSInteger j = 0 ; j < 10 ; j++) { //cycle through rows in section
             if([_customCell.nameLabel.text isEqualToString:@"Conor Williams"]) {
-                height = 0;
-                return height;
+                heightOfRow = 0;
             }
-            else {
-                return height ;
-            }
+            [tableView beginUpdates];
+            [tableView endUpdates];
+            
     }
     }
-        return height;
+        return heightOfRow;
 
-}
+} 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
