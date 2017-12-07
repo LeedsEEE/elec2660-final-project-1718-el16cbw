@@ -107,7 +107,29 @@
     //Above code found here https://stackoverflow.com/questions/813068/uitableview-change-section-header-color
 
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger i = 0; //section
+    NSInteger j = 0; //row
+    NSInteger height = 44; //row height
     
+    NSIndexPath *staffWorkingCell = [NSIndexPath indexPathForRow:j inSection:i ];
+
+    if(i == 0){
+        for(j = 0 ; j < self.staffWorking.count ; j ++) { //cycle through rows in section
+            if([_customCell.nameLabel.text isEqualToString:@"Conor Williams"]) {
+                height = 0;
+                return height;
+            }
+            else {
+                return height ;
+            }
+    }
+    }
+        return height;
+
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
