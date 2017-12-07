@@ -142,6 +142,9 @@
 }
 
 - (IBAction)staffNameSelected:(id)sender { //Switch next to name turned 'on'
+    
+    [_enterDateField resignFirstResponder];  //close keyboard when begin selecting staff
+    
 }
 - (IBAction)dateFieldSelected:(id)sender { //user inputs date
 }
