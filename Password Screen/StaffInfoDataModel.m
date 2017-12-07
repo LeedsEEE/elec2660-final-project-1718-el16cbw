@@ -50,7 +50,7 @@
         
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name4 = [[StaffInformation alloc] init];
-        name4.name = @"Brain Brianson";
+        name4.name = @"Brian Brianson";
         name4.dateJoined = @"Joined on: 03/02/2015";
         name4.emergencyContactName = @"Emergency contact name: Brienne Brianson";
         name4.emergencyContactNumber = @"Emergency contact number: 07234126589";
@@ -121,7 +121,7 @@
         name10.emergencyContactName = @"Emergency contact name: Mark Waterson";
         name10.emergencyContactNumber = @"Emergency contact number: 07554862541";
         name10.languagesSpoken = @"Speaks: English, German";
-        name10.trainedOn = @"Trained on: Solar Splash, Moon Karts, Slide, Jungle Boats Pillow, Archery";
+        name10.trainedOn = @"Trained on: Solar Splash, Moon Karts, Slide, Jungle Boats, Pillow, Archery, Costume";
         UIImage *image10 = [UIImage imageNamed:@"Face10.jpg"];
         name10.staffPhoto = image10;
         

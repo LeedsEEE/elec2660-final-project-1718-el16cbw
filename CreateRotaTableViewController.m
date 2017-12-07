@@ -55,16 +55,81 @@
     StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
     cell.nameLabel.text = tempStaffInformation.name;
 
-    if(indexPath.section == 1){
-        for(NSInteger j = 0 ; j < 10 ; j++) { //cycle through rows in section
-            if([cell.nameLabel.text isEqualToString:@"Conor Williams"]) {
-                cell.nameLabel.text = @"Conor Williams *";
+    if(indexPath.section == 0){ // Green dragon
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([cell.nameLabel.text isEqualToString:@"Declan Williams"]) {
+                cell.nameLabel.text = @"Declan Williams *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Peter vonTrinklestein"]){
+                cell.nameLabel.text = @"Peter vonTrinklestein *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Adrian Meacher"]){
+                cell.nameLabel.text = @"Adrian Meacher *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Oliver Chard"]){
+                cell.nameLabel.text = @"Oliver Chard *";
             }
         }
     }
-    return cell;
-
     
+    if(indexPath.section == 1){ // Solar Splash
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([cell.nameLabel.text isEqualToString:@"Declan Williams"]) {
+                cell.nameLabel.text = @"Declan Williams *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Peter vonTrinklestein"]){
+                cell.nameLabel.text = @"Peter vonTrinklestein *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"John Kelly"]){
+                cell.nameLabel.text = @"John Kelly *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Adrian Meacher"]){
+                cell.nameLabel.text = @"Adrian Meacher *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Brian Brianson"]){
+                cell.nameLabel.text = @"Brian Brianson *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Luce Kelly"]){
+                cell.nameLabel.text = @"Luce Kelly *";
+            }
+        }
+    }
+    
+    if(indexPath.section == 6){ //Archery
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([cell.nameLabel.text isEqualToString:@"Declan Williams"]) {
+                cell.nameLabel.text = @"Declan Williams *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Brian Brianson"]){
+                cell.nameLabel.text = @"Brian Brianson *";
+            }
+        }
+    }
+    
+    if(indexPath.section == 7){ //Costume
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([cell.nameLabel.text isEqualToString:@"Declan Williams"]) {
+                cell.nameLabel.text = @"Declan Williams *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Niall Williams"]){
+                cell.nameLabel.text = @"Niall Williams *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Brian Brianson"]) {
+                cell.nameLabel.text = @"Brian Brianson *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Peter vonTrinklestein"]){
+                cell.nameLabel.text = @"Peter vonTrinklestein *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Adrian Meacher"]) {
+                cell.nameLabel.text = @"Adrian Meacher *";
+            }
+            else if([cell.nameLabel.text isEqualToString:@"Kelly-Louise Jones"]){
+                cell.nameLabel.text = @"Kelly-Louise Jones *";
+            }
+        }
+    }
+    
+    return cell;
     
 }
 
