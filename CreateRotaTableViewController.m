@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     self.data = [[StaffInfoDataModel alloc] init];
+    self.staffSwitchStates = [[NSMutableArray alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning {

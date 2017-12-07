@@ -117,21 +117,22 @@
         
         NSLog(@"date is %@", self.dateEntered); //print date
     
-        NSMutableArray *staffSwitchStates = [NSMutableArray array]; //array of staff members selected
+        self.staffSwitchStates = [[NSMutableArray alloc]init];
         
         for(NSInteger j = 0 ; j<self.data.staffInformation.count; j++){  //cycle through all cells
 
             CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
-            bool switchState = tempCell.switchOutlet.on; //check switch state
-            if(switchState){
-                [staffSwitchStates addObject:tempCell]; //if switched on add to array
+            //bool switchState = tempCell.switchOutlet.on; //check switch state
+            if(tempCell.staffSwitchOutlet.on){
+                [self.staffSwitchStates addObject:tempCell]; //if switched on add to array
+                NSLog(@"IS SWITCH ON");
             }
 
         }
         
-        NSInteger arrayLength = staffSwitchStates.count; //count number of staff stiwched on
+        NSInteger arrayLength = self.staffSwitchStates.count; //count number of staff stiwched on
         NSLog(@"NUMBER OF STAFF SELECTED: %ld" , arrayLength);
-
+        NSLog(@"Array: %@", self.staffSwitchStates);
         
     }
 }

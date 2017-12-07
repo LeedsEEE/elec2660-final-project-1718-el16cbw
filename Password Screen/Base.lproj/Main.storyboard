@@ -293,6 +293,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="staffNameLabel" destination="51Q-bP-tdK" id="Vy4-Je-4qn"/>
+                                    <outlet property="staffSwitchOutlet" destination="q8Z-u6-uCl" id="jA2-8v-9rX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

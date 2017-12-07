@@ -16,7 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *staffNameLabel;
 
 @property (strong, nonatomic) NSMutableArray *switchStates;
-@property (weak, nonatomic) IBOutlet UISwitch *switchOutlet;
+
+@property (weak, nonatomic) IBOutlet UISwitch *staffSwitchOutlet;
 
 
 

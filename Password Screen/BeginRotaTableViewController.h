@@ -15,6 +15,7 @@
 
 @interface BeginRotaTableViewController : UITableViewController
 
+@property NSMutableArray *staffSwitchStates;
 
 @property (strong, nonatomic) StaffInfoDataModel *data;
 @property (strong, nonatomic) NSString *dateEntered;
@@ -27,6 +28,7 @@
 - (IBAction)dateFieldSelected:(id)sender;
 - (IBAction)nextButtonPressed:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UISwitch *staffSwitchOutlet;
 
 @end
 
