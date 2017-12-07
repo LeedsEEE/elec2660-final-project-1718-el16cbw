@@ -123,7 +123,7 @@
 
             CustomBeginRotaTableViewCell *tempCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:0]];
 
-            StaffInformation *tempStaffInfo = [self.data.staffInformation objectAtIndex:j];
+            StaffInformation *tempStaffInfo = [self.data.staffInformation objectAtIndex:j]; //get staff name located at the cell currently looking at
             
             //bool switchState = tempCell.switchOutlet.on; //check switch state
             if(tempCell.staffSwitchOutlet.on){
