@@ -15,7 +15,7 @@
 
 @interface BeginRotaTableViewController : UITableViewController
 
-@property NSMutableArray *staffSwitchStates;
+@property NSMutableArray *staffSwitchStates;  //stores switches turned on
 
 @property (strong, nonatomic) StaffInfoDataModel *data;
 @property (strong, nonatomic) NSString *dateEntered;

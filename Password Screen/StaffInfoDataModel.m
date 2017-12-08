@@ -15,6 +15,8 @@
     self = [super init];
     if (self) {
         
+        //Add staff information
+        
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name1 = [[StaffInformation alloc] init];
         name1.name = @"Conor Williams";
@@ -94,9 +96,9 @@
         
         self.staffInformation = [NSMutableArray array];
         StaffInformation *name8 = [[StaffInformation alloc] init];
-        name8.name = @"Kelly-Louise Jones";
+        name8.name = @"Elizabeth Mary";
         name8.dateJoined = @"Joined on: 12/03/2012";
-        name8.emergencyContactName = @"Emergency contact name: Stephen Jones";
+        name8.emergencyContactName = @"Emergency contact name: Philip Mountbatton";
         name8.emergencyContactNumber = @"Emergency contact number: 07989854632";
         name8.languagesSpoken = @"Speaks: English, Welsh";
         name8.trainedOn = @"Trained on: Green Dragon, Solar Splash, Moon Karts, Jungle Boats, Slide, Pillow, Archery";

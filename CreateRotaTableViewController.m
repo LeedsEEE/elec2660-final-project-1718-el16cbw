@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //initialise arrays
     self.data = [[StaffInfoDataModel alloc] init];
     self.staffWorking = [[NSMutableArray alloc] init];
 }
@@ -38,7 +39,7 @@
 
     NSInteger numberOfRows;
     
-        numberOfRows = self.staffWorking.count;
+        numberOfRows = self.staffWorking.count; //count number staff members selected in beginRota
 
     return numberOfRows;
 }
@@ -51,13 +52,12 @@
     
     tableView.allowsSelection = NO; //removes cell highlighting code found from: https://stackoverflow.com/questions/190908/how-can-i-disable-the-uitableview-selection-highlighting?rq=1
     
-    // Configure the cell
     
     StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
 
-    cell.nameLabel.text = tempStaffInformation.name;
+    cell.nameLabel.text = tempStaffInformation.name;  //display staff name in cell
 
-    //Back-up code shows who isn't trained with *
+    //Back-up code shows who isn't trained with '*'
     
     /* if(indexPath.section == 0){ // Green dragon
         for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
@@ -141,6 +141,8 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    //Add titles for attractions at top of sections
+    
     if(section == 0)
     {
         return @"Green Dragon";
@@ -199,13 +201,10 @@
     
 
     StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
-
-    
-    if(self.staffWorking.count && self.data.staffInformation.count >= indexPath.row) {
     
     if(indexPath.section == 0){ // Green dragon
         for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
-            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) {
+            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) { //names of those not trained - hide row
                heightOfRow = 0;
             }
             else if([tempStaffInformation.name isEqualToString:@"Peter vonTrinklestein"]){
@@ -288,13 +287,10 @@
             }
         }
     }
-        
-    
-    }
     
         return heightOfRow;
 
-} 
+}
 
 #pragma mark - Navigation
 

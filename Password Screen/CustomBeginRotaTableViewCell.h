@@ -12,7 +12,9 @@
 
 
 @interface CustomBeginRotaTableViewCell : UITableViewCell
+
 - (IBAction)staffSelectSwitchPressed:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *staffNameLabel;
 
 @property (strong, nonatomic) NSMutableArray *switchStates;
