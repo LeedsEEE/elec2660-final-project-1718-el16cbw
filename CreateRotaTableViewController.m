@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     self.data = [[StaffInfoDataModel alloc] init];
-    
+    self.staffWorking = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,6 +43,7 @@
     return numberOfRows;
 }
 
+#pragma mark - configure create rota cell
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -53,9 +54,12 @@
     // Configure the cell
     
     StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
+
     cell.nameLabel.text = tempStaffInformation.name;
 
-    if(indexPath.section == 0){ // Green dragon
+    //Back-up code shows who isn't trained with *
+    
+    /* if(indexPath.section == 0){ // Green dragon
         for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
             if([cell.nameLabel.text isEqualToString:@"Declan Williams"]) {
                 cell.nameLabel.text = @"Declan Williams *";
@@ -127,11 +131,13 @@
                 cell.nameLabel.text = @"Kelly-Louise Jones *";
             }
         }
-    }
+    } */
     
     return cell;
     
 }
+
+#pragma mark - Header sections
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
@@ -182,69 +188,113 @@
 
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touchesBegan:withEvent:");
-    [self.view endEditing:YES];
-    [super touchesBegan:touches withEvent:event];
-}
 
-/* - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+
+#pragma mark - height create rota rows
+
+ - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+  
     CGFloat heightOfRow = 44; //row height
     
-    //NSIndexPath *staffWorkingCell = [NSIndexPath indexPathForRow:j inSection:i ];
+
+    StaffInformation *tempStaffInformation = [self.staffWorking objectAtIndex:indexPath.row];
+
     
-    if(indexPath.section == 1){
-        for(NSInteger j = 0 ; j < 10 ; j++) { //cycle through rows in section
-            if([_customCell.nameLabel.text isEqualToString:@"Conor Williams"]) {
+    if(self.staffWorking.count && self.data.staffInformation.count >= indexPath.row) {
+    
+    if(indexPath.section == 0){ // Green dragon
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) {
+               heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Peter vonTrinklestein"]){
                 heightOfRow = 0;
             }
-            [tableView beginUpdates];
-            [tableView endUpdates];
-            
+            else if([tempStaffInformation.name isEqualToString:@"Adrian Meacher"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Oliver Chard"]){
+                heightOfRow = 0;
+            }
+            else {
+                heightOfRow = 44;
+            }
+        }
     }
+    
+    if(indexPath.section == 1){ // Solar Splash
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) {
+                
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Peter vonTrinklestein"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"John Kelly"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Adrian Meacher"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Brian Brianson"]){
+               heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Luce Kelly"]){
+                heightOfRow = 0;
+            }
+            else {
+                heightOfRow = 44;
+            }
+        }
     }
+    
+    if(indexPath.section == 6){ //Archery
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) {
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Brian Brianson"]){
+                heightOfRow = 0;
+            }
+            else {
+                heightOfRow = 44;
+            }
+        }
+    }
+    
+    if(indexPath.section == 7){ //Costume
+        for(NSInteger j = 0 ; j < self.staffWorking.count ; j++) { //cycle through rows in section
+            if([tempStaffInformation.name isEqualToString:@"Declan Williams"]) {
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Niall Williams"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Brian Brianson"]) {
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Peter vonTrinklestein"]){
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Adrian Meacher"]) {
+                heightOfRow = 0;
+            }
+            else if([tempStaffInformation.name isEqualToString:@"Kelly-Louise Jones"]){
+               heightOfRow = 0;
+            }
+            else {
+                heightOfRow = 44;
+            }
+        }
+    }
+        
+    
+    }
+    
         return heightOfRow;
 
 } 
- 
- 
- 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 #pragma mark - Navigation
 
