@@ -129,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				231B8F3E1FC3118400360A90 /* Greenwood Staff Rota */,
-				231B8F581FC3118400360A90 /* Password ScreenTests */,
-				231B8F631FC3118400360A90 /* Password ScreenUITests */,
+				231B8F581FC3118400360A90 /* Greenwood_Staff_RotaTests */,
+				231B8F631FC3118400360A90 /* Greenwood_Staff_RotaUITests */,
 				231B8F3D1FC3118400360A90 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -198,21 +198,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		231B8F581FC3118400360A90 /* Password ScreenTests */ = {
+		231B8F581FC3118400360A90 /* Greenwood_Staff_RotaTests */ = {
 			isa = PBXGroup;
 			children = (
 				231B8F591FC3118400360A90 /* Password_ScreenTests.m */,
 				231B8F5B1FC3118400360A90 /* Info.plist */,
 			);
+			name = Greenwood_Staff_RotaTests;
 			path = "Password ScreenTests";
 			sourceTree = "<group>";
 		};
-		231B8F631FC3118400360A90 /* Password ScreenUITests */ = {
+		231B8F631FC3118400360A90 /* Greenwood_Staff_RotaUITests */ = {
 			isa = PBXGroup;
 			children = (
 				231B8F641FC3118400360A90 /* Password_ScreenUITests.m */,
 				231B8F661FC3118400360A90 /* Info.plist */,
 			);
+			name = Greenwood_Staff_RotaUITests;
 			path = "Password ScreenUITests";
 			sourceTree = "<group>";
 		};
@@ -297,7 +299,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood Staff Rota" */;
+			buildConfigurationList = 231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood_Staff_Rota" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -586,7 +588,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood Staff Rota" */ = {
+		231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood_Staff_Rota" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				231B8F671FC3118400360A90 /* Debug */,
