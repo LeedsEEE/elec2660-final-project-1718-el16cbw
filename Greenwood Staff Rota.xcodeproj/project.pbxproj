@@ -128,7 +128,7 @@
 		231B8F331FC3118400360A90 = {
 			isa = PBXGroup;
 			children = (
-				231B8F3E1FC3118400360A90 /* Password Screen */,
+				231B8F3E1FC3118400360A90 /* Greenwood Staff Rota */,
 				231B8F581FC3118400360A90 /* Password ScreenTests */,
 				231B8F631FC3118400360A90 /* Password ScreenUITests */,
 				231B8F3D1FC3118400360A90 /* Products */,
@@ -145,7 +145,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		231B8F3E1FC3118400360A90 /* Password Screen */ = {
+		231B8F3E1FC3118400360A90 /* Greenwood Staff Rota */ = {
 			isa = PBXGroup;
 			children = (
 				231B8F421FC3118400360A90 /* AppDelegate.h */,
@@ -186,6 +186,7 @@
 				2303580A1FDACEE2000C957A /* Face8.jpg */,
 				231B8F3F1FC3118400360A90 /* Supporting Files */,
 			);
+			name = "Greenwood Staff Rota";
 			path = "Password Screen";
 			sourceTree = "<group>";
 		};
@@ -296,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Password Screen" */;
+			buildConfigurationList = 231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood Staff Rota" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -585,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Password Screen" */ = {
+		231B8F371FC3118400360A90 /* Build configuration list for PBXProject "Greenwood Staff Rota" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				231B8F671FC3118400360A90 /* Debug */,
